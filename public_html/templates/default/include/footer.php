@@ -6,9 +6,66 @@
 				<a href="<?= $this->alias() ?>" class="footer__logo _footer-title"><?= $this->set['name'] ?></a>
 				<div class="footer__text"><?= $this->set['short_content'] ?></div>
 				<div class="footer__contacts contacts-footer">
-					<a href="" class="contacts-footer__item _icon-location"><?= $this->set['address'] ?></a>
-					<a href="tel:<?= preg_replace('/[^\+\d]/', '', $this->set['phone']) ?>" class="contacts-footer__item _icon-phone"><?= $this->set['phone'] ?></a>
-					<a href="mailto:<?= $this->set['email'] ?>" target="_blank" class="contacts-footer__item"><?= $this->set['email'] ?></a>
+
+
+					<?php if (!empty($this->address)) : ?>
+
+						<ul>
+
+							<?php foreach ($this->address as $adres) : ?>
+
+								<li>
+
+									<div class="contacts-footer__item _icon-location"><?= $adres['name'] ?></div>
+
+								</li>
+
+							<?php endforeach; ?>
+
+						</ul>
+
+					<?php endif; ?>
+
+					<?php if (!empty($this->phones)) : ?>
+
+						<ul>
+
+							<?php foreach ($this->phones as $phone) : ?>
+
+								<li>
+
+									<a href="tel:<?= preg_replace('/[^\+\d]/', '', $phone['name']) ?>" class="contacts-footer__item _icon-phone"><?= $phone['name'] ?></a>
+
+								</li>
+
+							<?php endforeach; ?>
+
+						</ul>
+
+					<?php endif; ?>
+
+					<?php if (!empty($this->emails)) : ?>
+
+						<ul>
+
+							<?php foreach ($this->emails as $email) : ?>
+
+								<li>
+
+									<a href="mailto:<?= $email['name'] ?>" target="_blank" class="contacts-footer__item"><?= $email['name'] ?></a>
+
+								</li>
+
+							<?php endforeach; ?>
+
+						</ul>
+
+					<?php endif; ?>
+
+
+					<!-- <a href="" class="contacts-footer__item _icon-location"><?= $this->set['address'] ?></a> -->
+					<!-- <a href="tel:<?= preg_replace('/[^\+\d]/', '', $this->set['phone']) ?>" class="contacts-footer__item _icon-phone"><?= $this->set['phone'] ?></a> -->
+					<!-- <a href="mailto:<?= $this->set['email'] ?>" target="_blank" class="contacts-footer__item"><?= $this->set['email'] ?></a> -->
 				</div>
 			</div>
 			<div data-spollers="767,max" class="footer__menu menu-footer">

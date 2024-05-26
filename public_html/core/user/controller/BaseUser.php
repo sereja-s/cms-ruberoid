@@ -52,6 +52,8 @@ abstract class BaseUser extends \core\base\controller\BaseController
 
 	protected $emails;
 
+	protected $address;
+
 
 	protected function inputData()
 	{
@@ -111,6 +113,10 @@ abstract class BaseUser extends \core\base\controller\BaseController
 			'order' => ['menu_position']
 		]);
 		$this->emails = $this->model->get('emails', [
+			'where' => ['visible' => 1],
+			'order' => ['menu_position']
+		]);
+		$this->address = $this->model->get('address', [
 			'where' => ['visible' => 1],
 			'order' => ['menu_position']
 		]);

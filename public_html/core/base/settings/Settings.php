@@ -85,6 +85,7 @@ class Settings
 		'goods' => ['name' => 'Товары'],
 		'phones' => ['name' => 'Телефоны'],
 		'emails' => ['name' => 'Эл. почты'],
+		'address' => ['name' => 'Адреса'],
 		//'news' => ['name' => 'Новости'],
 		'information' => ['name' => 'Информация (меню)'],
 		'settings' => ['name' => 'Настройки (о сайте)'],
@@ -189,8 +190,8 @@ class Settings
 		'discount' => ['int' => true],
 		'login' => ['empty' => true, 'trim' => true],
 		'password' => ['crypt' => true, 'empty' => true],
-		'keywords' => ['count' => 70, 'trim' => true],
-		'description' => ['count' => 160, 'trim' => true]
+		'keywords' => ['count' => 170, 'trim' => true],
+		'description' => ['count' => 255, 'trim' => true]
 	];
 
 	// Объявим метод, который будет возвращать указанные выше свойства

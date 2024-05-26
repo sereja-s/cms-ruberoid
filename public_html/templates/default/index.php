@@ -2,7 +2,7 @@
 	<div class="main-slider__container _container">
 		<div class="main-slider__body">
 			<div class="main-slider__content content-main">
-				<h1 class="content-main__title"><?= $this->set['keywords'] ?></h1>
+				<h1 class="content-main__title"><?= $this->set['name'] ?></h1>
 				<div class="content-main__text">
 					<?= $this->set['description'] ?>
 				</div>

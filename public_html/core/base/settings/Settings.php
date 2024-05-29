@@ -104,7 +104,7 @@ class Settings
 	// свойство: массив шаблонов
 	private $templateArr = [
 		// массив вида: 'название шаблона' => массив с полями для которых должен быть подключен соответствующий шаблон
-		'text' => ['name', 'phone', 'email', 'alias', 'external_alias', 'sub_title', 'number_of_years', 'discount', 'price', 'login', 'password'],
+		'text' => ['name', 'phone', 'email', 'alias', 'external_alias', 'sub_title', 'number_of_years', 'discount', 'price', 'price_m_opt', 'login', 'password'],
 		'textarea' => ['content', 'keywords', 'address', 'description', 'short_content'],
 		'radio' => ['visible', 'show_top_menu', 'hit', 'new'/*'sale', 'hot'*/],
 		'checkboxlist' => ['filters', 'filters_test'], // указали, что хотим подключить фильтры к связанной таблице: 
@@ -144,6 +144,7 @@ class Settings
 		'hot' => ['Горячее предложение'],
 		'discount' => ['Скидка'],
 		'price' => ['Цена'],
+		'price_m_opt' => ['Цена (мелкий опт)'],
 		'parent_id' => ['Выбрать категорию', '(К чему относится?)'],
 		'promo_img' => ['Изображение для главной страницы'],
 		'login' => ['Логин'],
@@ -164,13 +165,13 @@ class Settings
 	// св-во, в котором будет храниться информация о корневых таблицах
 	private $rootItems = [
 		'name' => 'Корневая',
-		'tables' => ['catalog', 'filters', 'teachers']
+		'tables' => ['catalog']
 	];
 
 	// свойство для автоматизации связей многие ко многим
 	private $manyToMany = [
 		// массив содержит название таблиц, которые связаны в БД
-		'goods_filters' => ['goods', 'filters'/* , 'type' => 'root' */], // 'type' => 'child' || 'root' - необязательный 
+		//'goods_filters' => ['goods', 'filters'/* , 'type' => 'root' */], // 'type' => 'child' || 'root' - необязательный 
 		// 3-ий элемент массива: показывает (здесь- в товарах) только дочерние элементы или только родительские категории. 
 		// Без него (по умолчанию) будет показано всё (т.е и название фильтра и его значения)
 	];

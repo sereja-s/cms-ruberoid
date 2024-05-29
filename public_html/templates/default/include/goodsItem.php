@@ -44,13 +44,8 @@
 					<div class="item-product__price item-product__price_old">розница</div>
 				</div>
 				<div class="item-product__prices">
-					<div class="item-product__price">Rp 2.500.000</div>
-					<div class="item-product__price item-product__price_old">опт</div>
-				</div>
-				<div class="item-product__prices">
-					<div class="item-product__price">Rp 2.500.000</div>
+					<div class="item-product__price"><?= $data['price_m_opt'] ?> руб.</div>
 					<div class="item-product__price item-product__price_old">мелкий опт</div>
-
 				</div>
 
 			</div>

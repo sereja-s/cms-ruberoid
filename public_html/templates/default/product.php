@@ -36,8 +36,8 @@
 
 					</div> -->
 
-					<a href="#" style="padding-bottom: 70%;" class="item-product__image _ibg">
-						<img style="object-fit: fill;" src="<?= $this->img($data['img']) ?>" alt="<?= $data['name'] ?>">
+					<a href="#" class="item-product__image _ibg">
+						<img src="<?= $this->img($data['img']) ?>" alt="<?= $data['name'] ?>">
 					</a>
 					<div class="item-product__body">
 						<div class="item-product__content">

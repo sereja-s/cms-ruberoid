@@ -2761,7 +2761,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .content-main__text {
 	font-size: 20px;
-	color: #898989;
+	color: #433d3f;
 	font-weight: 500;
 	line-height: 150%;
 }
@@ -2848,7 +2848,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .slider-main__text {
 	line-height: 150%;
-	color: #898989;
+	color: #433d3f;
 }
 
 .slider-main__text:not(:last-child) {

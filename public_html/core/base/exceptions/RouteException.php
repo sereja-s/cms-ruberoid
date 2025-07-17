@@ -43,11 +43,10 @@ class RouteException extends \Exception
 		// здесь мы можем получить к нему доступ и его записать
 		// сделаем проверку: если в массиве свойства $this->messages есть ячейка с кодом [$this->getCode()]
 
-		//if ($this->messages[$this->getCode()]) 
-		//{
-		// то перезапишем переменную $this->message (служебное сообщение родительского класса) нашим сообщением (пользовательским согласно кода)
-		//$this->message = $this->messages[$this->getCode()];
-		//}
+		if ($this->messages[$this->getCode()]) {
+			// то перезапишем переменную $this->message (служебное сообщение родительского класса) нашим сообщением (пользовательским согласно кода)
+			$this->message = $this->messages[$this->getCode()];
+		}
 
 		// запишем ошибки (на вход передадим строку. которую мы сформировали в переменной $error)
 		$this->writeLog($error);

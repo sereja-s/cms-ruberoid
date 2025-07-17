@@ -237,11 +237,15 @@ if (document.querySelector('.slider-main__body')) {
 		loopAdditionalSlides: 5,
 		preloadImages: false,
 		parallax: true,
+		autoplay: {
+			delay: 9000,
+			speed: 1000,
+		 },
 		// Dotts
 		pagination: {
 			el: '.controls-slider-main__dotts',
 			clickable: true,
-		},
+		},		
 		// Arrows
 		navigation: {
 			nextEl: '.slider-main .slider-arrow_next',

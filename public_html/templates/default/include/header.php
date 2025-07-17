@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Роллеты, ворота, окна, балконы, лоджии, двери</title>
+
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
@@ -10,6 +10,26 @@
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="<?= $this->set['description'] ?>">
+	<meta name="keywords" content="<?= $this->set['keywords'] ?>">
+
+	<meta property="og:title" content="<?= $this->set['name'] ?>" />
+	<meta property="og:description" content="<?= $this->set['description'] ?>" />
+	<meta property="og:image" content="<?= $this->img($this->set['main_img']) ?>" />
+
+	<link rel="icon" href="https://dss-krovlya.ru/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://dss-krovlya.ru/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://dss-krovlya.ru/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://dss-krovlya.ru/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://dss-krovlya.ru/favicon/site.webmanifest">
+	<link rel="mask-icon" href="https://dss-krovlya.ru/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Донспецстрой - pубероид в Донецке, Макеевке, Харцызске, ДНР | продаём стеклоизол, стеклокром, праймер битумный, мастика битумная, конёк оцинкованный</title>
+
 	<?php $this->getStyles() ?>
 </head>
 
@@ -63,7 +83,7 @@
 
 											<li class="menu__item">
 
-												<button data-spoller type="button" class="menu__link" style="margin-bottom: 0; color: #3a3a3a; cursor: auto">Позвонить</button>
+												<button data-spoller type="button" class="menu__link-cat" style="margin-bottom: 0; color: #3a3a3a; cursor: auto">Позвонить</button>
 
 												<ul class="menu__sub-list">
 
@@ -87,7 +107,7 @@
 
 											<li class="menu__item">
 
-												<button data-spoller type="button" class="menu__link" style="margin-bottom: 0; color: #3a3a3a; cursor: auto">Написать</button>
+												<button data-spoller type="button" class="menu__link-cat" style="margin-bottom: 0; color: #3a3a3a; cursor: auto">Написать</button>
 
 												<ul class="menu__sub-list">
 
@@ -107,17 +127,6 @@
 
 										<?php endif; ?>
 
-
-										<!-- <li class="menu__item">
-											<a href="tel:<?= preg_replace('/[^\+\d]/', '', $this->set['phone']) ?>" class="contacts-footer__item _icon-phone"><?= $this->set['phone'] ?></a>
-										</li>
-										<li class="menu__item">
-											<a href="tel:<?= preg_replace('/[^\+\d]/', '', $this->set['phone']) ?>" class="contacts-footer__item _icon-phone"><?= $this->set['phone'] ?></a>
-										</li> -->
-										<!-- <li class="menu__item">
-											<a href="mailto:<?= $this->set['email'] ?>" target="_blank" class="contacts-footer__item _icon-email">
-												<?= $this->set['email'] ?></a>
-										</li> -->
 									</ul>
 								</nav>
 							</div>
@@ -139,20 +148,6 @@
 							</div>
 						</div>
 
-						<!-- <div class="header__actions actions-header">
-							<a href="" class="actions-header__item actions-header__item_favorites _icon-favorite"></a>
-							<div class="actions-header__item cart-header">
-								<a href="" class="cart-header__icon _icon-cart"></a>
-								<div class="cart-header__body">
-									<ul class="cart-header__list cart-list"></ul>
-								</div>
-							</div>
-							<a href="" class="actions-header__item actions-header__item_user _ibg">
-								<picture>
-									<source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar">
-								</picture>
-							</a>
-						</div> -->
 						<button type="button" class="icon-menu">
 							<span></span>
 							<span></span>

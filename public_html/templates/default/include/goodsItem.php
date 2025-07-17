@@ -3,6 +3,7 @@
 <?php if (!empty($data)) : ?>
 
 	<article class="products__item item-product">
+
 		<div class="item-product__labels">
 
 			<?php if (!empty($data['new'])) : ?>

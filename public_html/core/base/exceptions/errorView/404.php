@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>404 Страница не найдена</title>
+	<meta name="robots" content="follow, noindex" />
 	<meta name="description" content="">
 	<link rel="stylesheet" href="<?= PATH . BASE_EXCEPTIONS_TEMPLATE ?>css/main.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -10,6 +10,7 @@ const MS_MODE = false;
 const TEMPLATE = 'templates/default/';
 // константа для хранения пути к административной панели сайта
 const ADMIN_TEMPLATE = 'core/admin/view/';
+const BASE_EXCEPTIONS_TEMPLATE = 'core/base/exceptions/errorView/';
 
 // константа, указывающая директорию где у нас будут храниться загружаемые файлы
 const UPLOAD_DIR = 'userfiles/';

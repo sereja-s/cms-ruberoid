@@ -51,4 +51,13 @@ class RouteException extends \Exception
 		// запишем ошибки (на вход передадим строку. которую мы сформировали в переменной $error)
 		$this->writeLog($error);
 	}
+
+	public function showMessage()
+	{
+
+		header("HTTP/1.1 404 Not Found", true, 404);
+		header('Status: 404 Not Found');
+
+		return new \core\base\controller\ErrorController($this->message);
+	}
 }

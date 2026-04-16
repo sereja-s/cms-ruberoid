@@ -89,6 +89,7 @@ class Settings
 		//'news' => ['name' => 'Новости'],
 		'information' => ['name' => 'Информация (меню)'],
 		'settings' => ['name' => 'Настройки (о сайте)'],
+		'questions' => ['name' => 'Вопросы'],
 		'advantages' => ['name' => 'Преимущества'],
 		'socials' => ['name' => 'Соц.сети'],
 		//'payments' => ['name' => 'Оплата'],
@@ -192,7 +193,7 @@ class Settings
 		'discount' => ['int' => true],
 		'login' => ['empty' => true, 'trim' => true],
 		'password' => ['crypt' => true, 'empty' => true],
-		'keywords' => ['count' => 170, 'trim' => true],
+		'keywords' => ['count' => 400, 'trim' => true],
 		'description' => ['count' => 255, 'trim' => true]
 	];
 

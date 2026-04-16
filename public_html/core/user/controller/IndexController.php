@@ -70,10 +70,16 @@ class IndexController extends BaseUser
 			]);
 		}
 
+		$questions = $this->model->get('questions', [
+			'where' => ['visible' => 1],
+			'order' => ['menu_position']
+		]);
+
+
 		// Выпуск №125
 		//$goods = $this->model->getGoods();
 
 		// собираем переменные в массив и возвращаем в шаблон, что бы они стали доступными при выводе
-		return compact('sales', 'arrHits', 'goods', 'advantages', 'news');
+		return compact('sales', 'arrHits', 'goods', 'advantages', 'news', 'questions');
 	}
 }

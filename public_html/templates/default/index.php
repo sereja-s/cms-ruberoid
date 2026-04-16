@@ -119,6 +119,33 @@
 				<a href="<?= $this->alias('catalog') ?>" class="products__more-1 btn btn_white">Весь ассортимент</a>
 			</div>
 
+			<?php if (!empty($questions)) : ?>
+
+				<section8 class="page-eight eight">
+					<div class="eight__container">
+
+						<h2 class="title blog__title" style="text-align: center; font-size: 28px; font-weight:700">Часто задаваемые вопросы:</h2>
+
+						<div class="eight__rightside">
+							<div data-spollers class="spollers">
+
+								<?php foreach ($questions as $item) : ?>
+
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title"><?= $item['name'] ?></button>
+										<div class="spollers__body"><?= $item['content'] ?></div>
+									</div>
+
+								<?php endforeach; ?>
+
+							</div>
+						</div>
+
+					</div>
+				</section8>
+
+			<?php endif; ?>
+
 			<div class="s-content" style="margin-top: 35px">
 				<div class="content-block">
 					<p class="text-attention"><?= $this->set['keywords'] ?> в Донецке, Макеевке, Харцызске, ДНР - есть в Донспецстрой по адресу: <?= $this->set['address'] ?>. Сделать заказ можно по тел. <?= $this->set['phone'] ?>. Мы сообщим вам о наличии товара и его цену на текущий момент при уточнении деталей заказа. Цены доступные. Есть возможность доставки по Донецку, Макеевке, Харцызску, ДНР</p>
